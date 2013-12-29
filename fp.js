@@ -37,6 +37,9 @@
         case 'call':
           _results.push(context.call(v));
           break;
+        case 'text':
+          _results.push(context.text(v));
+          break;
         default:
           _results.push(context.attr(k, v));
       }

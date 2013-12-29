@@ -12,6 +12,7 @@ setAttributes = (context, attrs) ->
    when 'style' then setStyles context, v
    when 'on' then setEvents context, v
    when 'call' then context.call v
+   when 'text' then context.text v
    else context.attr k, v
 
 parseIdClass = (str) ->
